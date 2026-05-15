@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - ShopEase</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <section class="nav-container">
+            <a href="/index.html" class="logo">🛒 Shop<span>Ease</span></a>
+            <section class="search-bar">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="search-input" placeholder="Search products..." onkeyup="if(event.key==='Enter')location.href='/index.html?search='+this.value">
+            </section>
+            <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/wishlist.html">Wishlist</a></li>
+                <li><a href="/login.html" id="nav-login">Login</a></li>
+                <li id="nav-user" style="display:none"></li>
+                <li><a href="/cart.html" class="cart-link">🛒 Cart <span class="cart-count">0</span></a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <main>
+        <p id="loading" class="loading"><span class="spinner"></span></p>
+        <section id="product-details-container"></section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ShopEase E-Commerce</p>
+    </footer>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="/js/wishlist.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/utils.js"></script>
+    <script src="/js/product-details.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+com\ecommerce\service\ProductService.class
+com\ecommerce\repository\ProductRepository.class
+com\ecommerce\model\Product.class
+com\ecommerce\EcommerceApplication.class
+com\ecommerce\controller\ProductController.class
+com\ecommerce\config\WebConfig.class

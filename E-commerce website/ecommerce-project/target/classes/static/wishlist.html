@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist - ShopEase</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <section class="nav-container">
+            <a href="/index.html" class="logo">🛒 Shop<span>Ease</span></a>
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/wishlist.html" class="active">Wishlist</a></li>
+                <li><a href="/cart.html" class="cart-link">🛒 Cart <span class="cart-count">0</span></a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <main>
+        <h1 style="margin-bottom:1.5rem">My Wishlist</h1>
+
+        <section id="wishlist-empty" class="empty-state">
+            <p class="icon">❤️</p>
+            <h3>Your wishlist is empty</h3>
+            <p>Save products you love for later.</p>
+            <a href="/index.html" class="btn btn-primary">Browse Products</a>
+        </section>
+
+        <section id="wishlist-content" style="display:none">
+            <section class="products-grid" id="wishlist-grid"></section>
+        </section>
+    </main>
+
+    <footer><p>&copy; 2026 ShopEase E-Commerce</p></footer>
+
+    <script src="/js/cart.js"></script>
+    <script src="/js/wishlist.js"></script>
+    <script src="/js/utils.js"></script>
+    <script src="/js/wishlist-page.js"></script>
+</body>
+</html>
